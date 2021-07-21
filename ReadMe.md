@@ -6,8 +6,8 @@ Given a tree with N vertices, find the total number of spiders which can be foun
 A spider is defined as a set of five vertices in the tree connected by edges which can be arranged in the following form:
 
                  C                     B
-        
-             /           \         /            \
+
+           /           \         /            \
         
          D                  A                    E
 
