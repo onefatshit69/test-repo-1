@@ -1,0 +1,15 @@
+The idea is :
+We need to find structures like this: A-B-C-D-E so we consider C as our starting point and C should have at least 2 neighbors otherwise there will be no such structure from node C .
+Now if C is having at least 2 neighbors then we traverse through the neighbors of C (nodes attached to C) and check if the neighbors are having more than 1 neighbor (nodes attached to C's neighbors) otherwise there won't be any structure possible.
+
+Pseudocode :
+result=0
+loop from i=1 to n
+   check if the ith node is having more than 1 neighbors
+   if yes 
+      traverse the neighbors and check if their neighbors are more than 1
+      if yes
+         push the size of neighbors of neighbors of C  - 1 into a vector
+      
+       result+= Sum of product of all pairs of vector elements
+return result
